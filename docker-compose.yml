@@ -1,14 +1,14 @@
 version: '3'
 services:
   backend:
-    build: './backend/api'
+    build: './backend/'
     ports:
       - 3001:3001
     networks:
       - backend
       - frontend
     volumes:
-      - ./backend/api:/app
+      - ./backend:/app
       - /app/node_modules
 
   frontend:

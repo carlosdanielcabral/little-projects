@@ -1,0 +1,27 @@
+[
+  {
+    "estado": "São Paulo",
+    "sigla": "SP",
+    "valor": 67836.34
+  },
+  {
+    "estado": "Rio de Janeiro",
+    "sigla": "RJ",
+    "valor": 36678.66
+  },
+  {
+    "estado": "Minas Gerais",
+    "sigla": "MG",
+    "valor": 29229.88
+  },
+  {
+    "estado": "Espírito Santo",
+    "sigla": "ES",
+    "valor": 27165.48
+  },
+  {
+    "estado": "Outros",
+    "sigla": "",
+    "valor": 19849.53
+  }
+]
