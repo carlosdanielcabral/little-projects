@@ -1,6 +1,6 @@
 const Joi = require('joi');
 
-const validarNumero = (req, res, next) => {
+const validarNumero = (req, _res, next) => {
   const { numero } = req.query;
 
   const { error } = Joi.object({

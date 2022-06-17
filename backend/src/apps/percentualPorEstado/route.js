@@ -1,8 +1,8 @@
 const { Router } = require('express');
-const percentualPorEstado = require('./index');
+const percentual = require('./index');
 
 const router = Router();
 
-router.get('/', percentualPorEstado);
+router.get('/', percentual);
 
 module.exports = router;
