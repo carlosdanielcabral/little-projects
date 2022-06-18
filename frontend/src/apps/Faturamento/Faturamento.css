@@ -1,0 +1,25 @@
+.faturamento-page {
+  font-family: 'Courier New', Courier, monospace;
+  height: 100vh;
+}
+
+.faturamento-page header {
+  align-items: center;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+}
+
+.faturamento-page table {
+  margin: 60px auto;
+}
+
+.faturamento-page table td, .faturamento-page table th {
+  border: 1px solid rgb(100 100 100);
+  padding: 20px;
+  width: 300px;
+}
+
+.faturamento-page table td {
+  height: 40px;
+}
