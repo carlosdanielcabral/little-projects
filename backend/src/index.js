@@ -7,4 +7,6 @@ const app = express();
 app.use('/', router);
 app.use(ErrorMiddleware);
 
-app.listen(3001, () => console.log('Ouvindo na porta 3001'));
+const PORT = 3001;
+
+app.listen(PORT, () => console.log(`Ouvindo na porta ${PORT}`));
