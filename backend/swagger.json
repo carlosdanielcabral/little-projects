@@ -1,0 +1,151 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Sample API",
+    "version": "0.0.1"
+  },
+  "paths": {
+    "/fibonacci": {
+      "get": {
+        "tags": ["Fibonacci"],
+        "summary": "Verifica se um número pertence à sequência de Fibonacci",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "pertenceASequencia": {
+                      "type": "boolean"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "parameters": [{
+          "name": "numero",
+          "in": "query",
+          "description": "O número que se quer descobrir pertencer ou não à sequência de Fibonacci.",
+          "required": true
+        }]
+      }
+    },
+
+    "/faturamento": {
+      "get": {
+        "tags": ["Faturamento"],
+        "summary": "Retorna alguns dados do faturamento mensal de uma distribuidora fictícia",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "menorValor": {
+                      "type": "number"
+                    },
+                    "maiorValor": {
+                      "type": "number"
+                    },
+                    "diasComFaturamentoMaior": {
+                      "type": "number"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    
+    "/faturamento/dados": {
+      "get": {
+        "tags": ["Faturamento"],
+        "summary": "Retorna todos os dados do faturamento mensal de uma distribuidora fictícia",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                      "type": "object",
+                      "properties": {
+                        "dia": {
+                          "type": "number"
+                        },
+                        "valor": {
+                          "type": "number"
+                        }
+                      }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+      }
+    },
+
+    "/percentual": {
+      "get": {
+        "tags": ["Percentual"],
+        "summary": "Retorna dados fictícios de faturamento dos estados brasileiros.",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "estado": {
+                      "type": "string"
+                    },
+                    "sigla": {
+                      "type": "string"
+                    },
+                    "valor": {
+                      "type": "number"
+                    },
+                    "percentual": {
+                      "type": "number"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+
+    "/inverter-string": {
+      "get": {
+        "tags": ["Inverter String"],
+        "summary": "Recebe uma string e retorna a mesma invertida.",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "stringInvertida": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
