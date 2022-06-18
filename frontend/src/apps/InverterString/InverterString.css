@@ -1,0 +1,43 @@
+.inverter-string-page {
+  align-items: center;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  overflow-x: hidden;
+  text-align: center;
+  width: 100vw;
+}
+
+.inverter-string-page header {
+  align-items: center;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  width: 100vw;
+}
+
+.inverter-string-page button {
+  background-color: inherit;
+  border: 1px solid rgb(200 200 200);
+  border-radius: 10px;
+  color: rgb(20 20 20);
+  height: 50px;
+  margin: 10px;
+  padding: 0 10px;
+  transition: 200ms;
+}
+
+.inverter-string-page button:hover {
+  background-color: rgb(80 90 100);
+  color: white;
+}
+
+.inverter-string-page input {
+  border: 1px solid rgb(200 200 200);
+  border-radius: 10px;;
+  box-sizing: border-box;
+  height: 50px;
+  padding: 0 10px;
+}
