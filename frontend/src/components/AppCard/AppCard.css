@@ -1,0 +1,29 @@
+.app-link {
+  color: rgb(70 70 70);
+  text-decoration: none;
+}
+
+.app-card {
+  align-items: center;
+  background-color: rgb(240 240 240);
+  border: 1px solid rgb(200 200 200);
+  border-radius: 5px;
+  display: flex;
+  flex-shrink: 0;
+  height: 150px;
+  justify-content: center;
+  margin: 10px;
+  text-align: center;
+  transition: 200ms;
+  width: 200px;
+}
+
+.app-card:hover {
+  background-color: rgb(40, 50, 60);
+  color: rgb(220 220 220);
+  transform: scale(1.1);
+}
+
+.app-card h2 {
+  font-weight: 300;
+}

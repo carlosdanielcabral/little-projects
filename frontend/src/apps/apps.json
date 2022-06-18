@@ -1,0 +1,18 @@
+[
+  {
+    "nome": "Fibonacci",
+    "rota": "/fibonacci"
+  },
+  {
+    "nome": "Gerenciar Faturamento",
+    "rota": "/faturamento"
+  },
+  {
+    "nome": "Percentual de Faturamento",
+    "rota": "/percentual"
+  },
+  {
+    "nome": "Inverter Strings",
+    "rota": "/inverter-strings"
+  }
+]

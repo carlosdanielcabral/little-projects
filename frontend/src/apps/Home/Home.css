@@ -1,0 +1,23 @@
+.home-page header {
+  align-items: center;
+  background-color: rgb(10 20 30);
+  box-shadow: 1px 1px 10px 2px rgb(100 100 100);
+  color: white;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+}
+
+.home-page header h1 {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.home-page main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px auto;
+  overflow: hidden;
+  width: 500px;
+}
