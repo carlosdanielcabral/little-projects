@@ -38,10 +38,15 @@ const calcularDiasComMediaMaior = () => {
   return diasComMediaMaior.length;
 };
 
-const main = () => ({
+const calcularFaturamento = () => ({
   menorValor: calcularMenorValor(),
   maiorValor: calcularMaiorValor(),
   diasComFaturamentoMaior: calcularDiasComMediaMaior(),
 });
 
-module.exports = main;
+const obterTodosOsDados = () => dados;
+
+module.exports = {
+  calcularFaturamento,
+  obterTodosOsDados,
+};

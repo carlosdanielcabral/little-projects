@@ -1,10 +1,19 @@
-const calcularFaturamento = require('./calcularFaturamento');
+const faturamento = require('./calcularFaturamento');
 const HTTP_STATUS_CODE = require('../../consts/HttpStatusCode');
 
-const faturamento = (_req, res) => {
-  const dados = calcularFaturamento();
+const obterTodosOsDados = (_req, res) => {
+  const dados = faturamento.obterTodosOsDados();
+
+  return res.status(HTTP_STATUS_CODE.ok).json({ dados });
+};
+
+const obterDadosFiltrados = (_req, res) => {
+  const dados = faturamento.calcularFaturamento();
 
   return res.status(HTTP_STATUS_CODE.ok).json(dados);
 };
 
-module.exports = faturamento;
+module.exports = {
+  obterTodosOsDados,
+  obterDadosFiltrados,
+};

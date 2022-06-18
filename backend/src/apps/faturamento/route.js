@@ -3,6 +3,7 @@ const faturamento = require('./index');
 
 const router = Router();
 
-router.get('/', faturamento);
+router.get('/dados', faturamento.obterTodosOsDados);
+router.get('/', faturamento.obterDadosFiltrados);
 
 module.exports = router;
