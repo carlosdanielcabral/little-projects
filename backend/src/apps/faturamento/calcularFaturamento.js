@@ -6,7 +6,7 @@ const calcularMenorValor = () => {
   let menorValor = diasComFaturamento[0].valor;
 
   for (let i = 0; i < diasComFaturamento.length; i += 1) {
-    if (diasComFaturamento[i].valor < menorValor) menorValor = diasComFaturamento[i].valor;    
+    if (diasComFaturamento[i].valor < menorValor) menorValor = diasComFaturamento[i].valor;
   }
 
   return menorValor;

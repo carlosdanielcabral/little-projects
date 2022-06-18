@@ -1,11 +1,12 @@
 const HTTP_STATUS_CODE = require('../consts/HttpStatusCode');
 
+// eslint-disable-next-line no-unused-vars
 const errorMiddleware = (err, _req, res, _next) => {
   if (err.isJoi) {
     return res
       .status(HTTP_STATUS_CODE.badRequest)
       .json({ message: err.details[0].message });
-  };
+  }
 
   if (!err.code) {
     return res
