@@ -1,6 +1,9 @@
 .faturamento-page {
   font-family: 'Courier New', Courier, monospace;
   height: 100vh;
+  overflow-x: hidden;
+  text-align: center;
+  width: 100vw;
 }
 
 .faturamento-page header {
@@ -8,15 +11,37 @@
   display: flex;
   height: 60px;
   justify-content: center;
+  width: 100vw;
+}
+
+.faturamento-page .options {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.faturamento-page .options button {
+  background-color: inherit;
+  border: 1px solid rgb(200 200 200);
+  border-radius: 10px;
+  color: rgb(20 20 20);
+  height: 50px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.faturamento-page .options .selected {
+  background-color: rgb(0, 127, 53);
+  color: white;
 }
 
 .faturamento-page table {
-  margin: 60px auto;
+  margin: 0px auto;
 }
 
 .faturamento-page table td, .faturamento-page table th {
   border: 1px solid rgb(100 100 100);
-  padding: 20px;
+  height: 80px;
   width: 300px;
 }
 
