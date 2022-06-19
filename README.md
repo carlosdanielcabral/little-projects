@@ -17,23 +17,5 @@ Javascript, Node, Express, Joi
 docker-compose up
 ```
 
-### Sem Docker
-#### Instalando as dependências
-```bash
- cd frontend
- npm install
- cd ../backend
- npm install
- cd ..
- ```
- 
- #### Rodando a aplicação
- ```bash
- cd frontend
- npm start &
- cd ../backend
- npm start &
- ```
-
 ## Documentação da API
 Com a aplicação rodando, acesse http://localhost:3001/api-docs para ter acesso à documentação da API.
