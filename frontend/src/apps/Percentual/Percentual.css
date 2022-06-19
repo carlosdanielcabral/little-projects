@@ -1,5 +1,5 @@
 .percentual-page {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   height: 100vh;
   overflow-x: hidden;
   text-align: center;
@@ -31,15 +31,16 @@
 }
 
 .percentual-page .options .selected {
-  background-color: rgb(0, 127, 53);
+  background-color: rgb(0 127 53);
   color: white;
 }
 
 .percentual-page table {
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
-.percentual-page table td, .percentual-page table th {
+.percentual-page table td,
+.percentual-page table th {
   border: 1px solid rgb(100 100 100);
   height: 80px;
   width: 300px;

@@ -19,7 +19,7 @@
 }
 
 .app-card:hover {
-  background-color: rgb(40, 50, 60);
+  background-color: rgb(40 50 60);
   color: rgb(220 220 220);
   transform: scale(1.1);
 }

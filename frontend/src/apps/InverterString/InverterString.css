@@ -1,6 +1,6 @@
 .inverter-string-page {
   align-items: center;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -36,7 +36,7 @@
 
 .inverter-string-page input {
   border: 1px solid rgb(200 200 200);
-  border-radius: 10px;;
+  border-radius: 10px;
   box-sizing: border-box;
   height: 50px;
   padding: 0 10px;
