@@ -13,7 +13,9 @@ const Home = () => (
 
     <main>
       {
-        apps.map((app) => <AppCard nome={app.nome} rota={app.rota} />)
+        apps.map((app, index) => (
+          <AppCard nome={app.nome} rota={app.rota} key={`${index + 1}-app-${app}`}/>
+        ))
       }
     </main>
   </div>

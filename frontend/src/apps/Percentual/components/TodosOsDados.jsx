@@ -24,8 +24,8 @@ const TodosOsDados = ({ resultados }) => (
 
     <tbody>
       {
-        resultados.map((resultado) => (
-          <tr>
+        resultados.map((resultado, index) => (
+          <tr key={`${index + 1}-resultado-total`}>
             <td>{ resultado.estado}</td>
             <td>{ resultado.sigla }</td>
             <td>{ resultado.valor}</td>

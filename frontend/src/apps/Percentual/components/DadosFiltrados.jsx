@@ -16,8 +16,8 @@ const DadosFiltrados = ({ resultados }) => (
 
     <tbody>
       {
-        resultados.map((resultado) => (
-          <tr>
+        resultados.map((resultado, index) => (
+          <tr key={`${index + 1}-resultado-filtrado`}>
             <td>{resultado.sigla ? resultado.sigla : resultado.estado}</td>
             <td>{ resultado.percentual }</td>
           </tr>

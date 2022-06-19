@@ -16,8 +16,8 @@ const TodosOsDados = ({ resultados }) => (
 
     <tbody>
       {
-        resultados.map((resultado) => (
-          <tr>
+        resultados.map((resultado, index) => (
+          <tr key={`${index + 1}-resultado`}>
             <td>{ resultado.dia }</td>
             <td>{ resultado.valor }</td>
           </tr>
