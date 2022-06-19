@@ -10,6 +10,11 @@ HTML, CSS, Javascript, React
 ### Backend
 Javascript, Node, Express, Joi
 
+## Clonando a aplicação
+```bash
+git clone git@github.com:carlosdanielcabral/little-projects.git
+```
+
 ## Rodando a aplicação
 
 ### Com Docker
