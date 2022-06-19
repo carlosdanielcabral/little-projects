@@ -1,6 +1,6 @@
 @keyframes rolagem-horizontal {
-  0% { margin-left: 100vw }
-  100% { margin-left: -300vw }
+  0% { margin-left: 100vw; }
+  100% { margin-left: -300vw; }
 }
 
 .home-page header {
@@ -37,13 +37,13 @@
 @media screen and (max-width: 600px) {
   .home-page header h1 {
     animation-name: rolagem-horizontal;
-    animation-duration: 20s; 
+    animation-duration: 20s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     font-size: 20px;
     font-weight: 200;
   }
-  
+
   .home-page main {
     width: 100vw;
   }
