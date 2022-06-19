@@ -15,7 +15,6 @@ const Faturamento = () => {
       const URL = `http://localhost:3001/${rota}`
       const resposta = await fetch(URL);
       const dados = await resposta.json();
-      console.log(dados);
       setResultados(dados);
     };
     recuperarResultados();

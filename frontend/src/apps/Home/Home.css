@@ -1,23 +1,50 @@
+@keyframes rolagem-horizontal {
+  0% { margin-left: 100vw }
+  100% { margin-left: -300vw }
+}
+
 .home-page header {
   align-items: center;
   background-color: rgb(10 20 30);
   box-shadow: 1px 1px 10px 2px rgb(100 100 100);
+  box-sizing: border-box;
   color: white;
   display: flex;
   height: 80px;
   justify-content: center;
+  overflow: hidden;
+  width: 100vw;
 }
 
 .home-page header h1 {
+  box-sizing: border-box;
   font-size: 24px;
   font-weight: 200;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .home-page main {
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 50px auto;
   overflow: hidden;
   width: 500px;
+}
+
+@media screen and (max-width: 600px) {
+  .home-page header h1 {
+    animation-name: rolagem-horizontal;
+    animation-duration: 20s; 
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    font-size: 20px;
+    font-weight: 200;
+  }
+  
+  .home-page main {
+    width: 100vw;
+  }
 }

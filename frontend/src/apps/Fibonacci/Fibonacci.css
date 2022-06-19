@@ -1,14 +1,19 @@
 .fibonacci-page {
   background-color: rgb(240 240 240);
+  box-sizing: border-box;
   height: 100vh;
+  overflow: hidden;
+  width: 100vw;
 }
 
 .fibonacci-page header {
   align-items: center;
   background-color: rgb(253 253 253);
+  box-sizing: border-box;
   display: flex;
   height: 75px;
   justify-content: center;
+  width: 100vw;
 }
 
 .fibonacci-page header h1 {
@@ -16,12 +21,18 @@
 }
 
 .fibonacci-page main {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   padding: 0 40px;
+  width: 100vw;
 }
 
 .fibonacci-page main blockquote {
   background-color: rgb(253 253 253);
   border: 1px solid rgb(200 200 200);
+  box-sizing: border-box;
   color: rgb(60 60 60);
   display: flex;
   flex-direction: column;

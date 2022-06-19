@@ -1,4 +1,5 @@
 .percentual-page {
+  box-sizing: border-box;
   font-family: "Courier New", Courier, monospace;
   height: 100vh;
   overflow-x: hidden;
@@ -8,8 +9,9 @@
 
 .percentual-page header {
   align-items: center;
+  box-sizing: border-box;
   display: flex;
-  height: 60px;
+  height: 100px;
   justify-content: center;
   width: 100vw;
 }
