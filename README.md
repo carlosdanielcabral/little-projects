@@ -1,4 +1,4 @@
-# Little Projectslittle-projects
+# Little Projects
 
 ## Descrição
 Nesta aplicação é possível verificar se um número pertence à sequência de Fibonacci, obter dados de faturamento de uma distribuidora fictícia, obter dados de faturamento fictícios de estados brasileros e fazer a inversão de uma string.
